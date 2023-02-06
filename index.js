@@ -12,6 +12,7 @@ const playRound = (userChoice) => {
   document.querySelector('#result').innerHTML = `You chose: ${userChoice}<br>Computer chose: ${computerChoice}`;
   if (userChoice === computerChoice) {
     document.querySelector('#result').innerHTML += "<br>It's a tie!";
+    return;
   } else if (userChoice === 'rock' && computerChoice === 'scissors' ||
              userChoice === 'scissors' && computerChoice === 'paper' ||
              userChoice === 'paper' && computerChoice === 'rock') {
