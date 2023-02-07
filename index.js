@@ -8,7 +8,6 @@ const playRound = (userChoice) => {
   const computerChoice = getComputerChoice();
   console.log(`You chose: ${userChoice}`);
   console.log(`Computer chose: ${computerChoice}`);
-  round === 5 ? element.style.display = "flex" :element.style.display = "none";
   document.querySelector('#result').innerHTML = `You chose: ${userChoice}<br>Computer chose: ${computerChoice}`;
   if (userChoice === computerChoice) {
     document.querySelector('#result').innerHTML += "<br>It's a tie!";
@@ -29,6 +28,7 @@ const playRound = (userChoice) => {
     document.querySelector('#rock').disabled = true;
     document.querySelector('#paper').disabled = true;
     document.querySelector('#scissors').disabled = true;
+    element.style.display = "flex";
   } else {
     round++;
     document.querySelector('#round').innerHTML = round;

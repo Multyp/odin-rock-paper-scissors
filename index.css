@@ -40,6 +40,7 @@ body {
 .choices {
     display: flex;
     justify-content: center;
+    gap: 15px;
 }
 
 .choices button {
@@ -50,8 +51,7 @@ body {
     color: white;
     background-color: #334;
     border-color: transparent;
-    margin-right: 10px;
-    margin-left: 10px;
+    cursor: pointer;
 }
 
 .choices button:hover {
@@ -68,12 +68,13 @@ body {
     height: 40px;
     line-height: 30px;
     width: 120px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: white;
     background-color: #334;
     border-color: transparent;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #replay {
